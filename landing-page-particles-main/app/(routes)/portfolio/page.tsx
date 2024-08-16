@@ -13,11 +13,12 @@ import PortfolioBox from "@/components/portfolio-box";
 const PortfolioPage = () => {
 
     return (
+        <main className="flex min-h-screen bg-gradient-cover bg-no-repeat">
         <ContainerPage>
             <TransitionPage />
             <AvatarPortfolio />
             <CircleImage />
-            <div className="flex flex-col justify-center h-full">
+            <div className="flex flex-col justify-center h-full ">
                 <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">Mis últimos <span className="font-bold text-secondary">trabajos realizados</span></h1>
 
                 <div className="relative z-10 grid max-w-5xl gap-6 mx-auto mt-4 md:grid-cols-4">
@@ -27,6 +28,7 @@ const PortfolioPage = () => {
                 </div>
             </div>
         </ContainerPage>
+        </main>
     );
 }
 
